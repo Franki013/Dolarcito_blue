@@ -1,0 +1,102 @@
+body{
+    background-image: linear-gradient(to right bottom, #003f9d, #2456af, #3d6dc0, #5584d1, #6d9ce1);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Work Sans', sans-serif;
+    color: #e1e1e1;
+}
+
+
+header{
+    text-align: center;
+    margin: 0 auto;
+    padding: 15rem 0 0 0;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+span{
+    font-weight: 300;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
+.input{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.ingresarValor{
+    padding: 10px;
+    border: 0;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+}
+.menuSelect{
+    padding: 9px;
+    width: 7.5rem;
+    border: 0;
+    background-color: white;
+}
+
+
+.button{
+    padding: 10px;
+    border: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px ;
+}
+
+.button:hover{
+    background-color: #2456af;
+    color: #e1e1e1;
+    transition: 0.5s;
+}
+
+.valueInput{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contenedor{
+    padding: 5rem;
+    width: 15rem;
+    margin: 0 auto;
+}
+
+h3{
+    text-align: center;
+    margin: 0 auto;
+    background-color: #2456af;
+    padding:1rem 0 1rem 0;
+}
+
+
+.dolar{
+    display: flex;
+    justify-content: space-around;
+    background-color: #e1e1e1;
+    color: #003f9d;
+    text-align: center;
+    padding: 5px;
+}
+
+.parrafo{
+    text-align: center;
+    margin: 0 auto;
+}
+.parrafo::after{
+    content: '\A'; white-space: pre;;
+}

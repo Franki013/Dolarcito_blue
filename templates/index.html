@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <title>Dolarcito blue</title>
+</head>
+<body>
+    <header>
+        <h1>Dolarcito blue</h1>
+        <span>Convertí facilmente a Dolar blue.</span>
+    </header>
+    <div class="input">
+        <input type="number" placeholder="Cuanto queres convertir?" name="" class="ingresarValor">
+        <div class="menu">
+            <select name="" class="menuSelect">
+                <option disabled="">Selecciona una opcion</option>
+                <option selected value="1">Dolar a Peso</option>
+                <option value="2">Peso a Dolar</option>
+            </select>
+        </div>
+        <input type="button" value="Convertir" class="button" onclick="getValueInput()">
+    </div>
+
+    <div class="valueInput">Ingrese cuanto desea convertir</div>
+
+    <div class="contenedor">
+        <h3>Precio dolar blue</h3>
+        <div class="dolar">
+            <div class="espaciador"> Compra: <br>
+                <div class="dolarCompra">${{ dolarCompra }}</div>
+            </div>
+            <div class="espaciador"> Venta: <br>
+                <div class="dolarVenta">${{ dolarVenta }}</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/js/main.js"></script>
+</body>
+</html>
