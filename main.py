@@ -35,9 +35,6 @@ for i in range(len(characters)):
 for i in range(len(characters)):
     dolarVe = dolarVe.replace(characters[i],"")
 
-print(dolarCo)
-print(dolarVe)
-
 
 app = Flask(__name__)
 @app.route("/")

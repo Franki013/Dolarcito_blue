@@ -12,11 +12,17 @@
     <title>Dolarcito blue</title>
 </head>
 <body>
+    <div class="background">
+        <div class="loader">
+            <div class="shadow"></div>
+            <div class="box"></div>
+        </div>
+    </div>
     <header>
         <h1>Dolarcito blue</h1>
         <span>Convertí facilmente a Dolar blue.</span>
     </header>
-    <div class="input">
+    <div class="input" id="input">
         <input type="number" placeholder="Cuanto queres convertir?" name="" class="ingresarValor">
         <div class="menu">
             <select name="" class="menuSelect">
@@ -25,10 +31,10 @@
                 <option value="2">Peso a Dolar</option>
             </select>
         </div>
-        <input type="button" value="Convertir" class="button" onclick="getValueInput()">
+        <input type="button" value="Convertir" class="button" onclick="getValueInput()" id="button">
     </div>
 
-    <div class="valueInput">Ingrese cuanto desea convertir</div>
+    <p class="valueInput">Ingrese cuanto desea convertir</p>
 
     <div class="contenedor">
         <h3>Precio dolar blue</h3>
@@ -43,5 +49,20 @@
     </div>
 
     <script src="../static/js/main.js"></script>
+
+    <script>
+        var loader = document.querySelector(".background");
+        setTimeout(function(){
+            loader.style.display = "none";
+        }, 2000)
+    </script>
+
+    <script>
+        $("#input").keyup(function(e){
+            if (event.keyCode == 13){
+                $("#button").click();
+            }
+        })
+    </script>
 </body>
 </html>
